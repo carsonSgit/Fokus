@@ -12,12 +12,9 @@
           RowSpacing="10"
           ColumnSpacing="10">
 
-        <Image Grid.ColumnSpan="2"
-               Aspect="AspectFit"
-            Source="logo.png"/>
-
-        <Entry Placeholder="Enter Task"
+        <Entry Placeholder="Write some tasks..."
                Text="{Binding Text}"
+               FontSize="18"
                Grid.Row="1"/>
 
         <Button 
@@ -59,7 +56,7 @@
                                         CommandParameter="{Binding .}"/>
                                 </Frame.GestureRecognizers>
                                 <Label Text="{Binding .}"
-                                       FontSize="14"/>
+                                       FontSize="16"/>
                             </Frame>
                         </Grid>
                     </SwipeView>
