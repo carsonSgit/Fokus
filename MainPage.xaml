@@ -5,21 +5,28 @@
              x:DataType="viewmodel:MainViewModel"
              x:Class="Fokus.MainPage">
 
-    <Grid RowDefinitions="100, Auto, *"
-          ColumnDefinitions=".75*, .25*"
-          Padding="10"
-          RowSpacing="10"
-          ColumnSpacing="10">
+    <Grid RowDefinitions="Auto, Auto, Auto"
+          ColumnDefinitions="*" Padding="10">
 
-        <Image Grid.ColumnSpan="2"
+        <Image Source="logo.png"
                Aspect="AspectFit"
-            Source="logo.png"/>
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Grid.Row="0"
+               HeightRequest="100"/>
 
+        <Label Text="Let's get started"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               FontSize="20"
+               Padding="10"
+               Grid.Row="1"/>
 
-        <Button Text="Add"
+        <Button Text="Create Task"
                 Command="{Binding TapCommand}"
-                Grid.Row="1"
-                Grid.Column="1"/>
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
     </Grid>
 
 </ContentPage>
