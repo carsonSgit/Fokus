@@ -12,8 +12,8 @@
           ColumnSpacing="10">
 
         <Image Grid.ColumnSpan="2"
-               Aspect="AspectFill"
-            Source="dotnet_bot.png"/>
+               Aspect="AspectFit"
+            Source="logo.png"/>
 
         <Entry Placeholder="Enter Task"
                Text="{Binding Text}"
