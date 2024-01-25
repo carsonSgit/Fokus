@@ -6,27 +6,38 @@
              x:Class="Fokus.MainPage">
 
     <Grid RowDefinitions="Auto, Auto, Auto"
-          ColumnDefinitions="*" Padding="10">
+          ColumnDefinitions="*" Padding="20">
 
         <Image Source="logo.png"
                Aspect="AspectFit"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"
                Grid.Row="0"
-               HeightRequest="100"/>
+               HeightRequest="150"/>
 
-        <Label Text="Let's get started"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand"
-               FontSize="20"
-               Padding="10"
-               Grid.Row="1"/>
+        <StackLayout Grid.Row="1">
+            <Label Text="Get ready to boost your productivity."
+                   HorizontalOptions="Center"
+                   FontSize="16"
+                   TextColor="#555555"
+                   Padding="10"/>
+            <Label Text="Start creating tasks and stay focused!"
+                   HorizontalOptions="Center"
+                   FontSize="16"
+                   TextColor="#555555"
+                   Padding="15"/>
+        </StackLayout>
 
         <Button Text="Create Task"
                 Command="{Binding TapCommand}"
                 Grid.Row="2"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"/>
+                TextColor="White"
+                CornerRadius="16"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"
+                WidthRequest="180"/>
+
     </Grid>
 
 </ContentPage>
