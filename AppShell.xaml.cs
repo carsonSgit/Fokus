@@ -8,6 +8,7 @@
 
             // Allows for different "pages"
             Routing.RegisterRoute(nameof(DetailPage), typeof(DetailPage));
+            Routing.RegisterRoute(nameof(TaskPage), typeof(TaskPage));
         }
     }
 }

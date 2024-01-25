@@ -24,6 +24,10 @@ namespace Fokus
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
 
+            // Task Page
+            builder.Services.AddSingleton<TaskPage>();
+            builder.Services.AddSingleton<TaskViewModel>();
+
             // Detail Page
             // Transient made every time it is recalled
             builder.Services.AddTransient<DetailPage>();
