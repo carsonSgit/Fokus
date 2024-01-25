@@ -31,7 +31,6 @@
         <Button Text="Create Task"
                 Command="{Binding TapCommand}"
                 Grid.Row="2"
-                TextColor="White"
                 CornerRadius="16"
                 FontSize="18"
                 HorizontalOptions="FillAndExpand"

@@ -20,10 +20,17 @@
                Text="{Binding Text}"
                Grid.Row="1"/>
 
-        <Button Text="Add"
+        <Button 
+                FontFamily="Font Awesome-Regular.otf"
+                Text="+"
                 Command="{Binding AddCommand}"
                 Grid.Row="1"
-                Grid.Column="1"/>
+                Grid.Column="1"
+                CornerRadius="16"
+                WidthRequest="50"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand">
+        </Button>
 
         <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
                         ItemsSource="{Binding Items}"
